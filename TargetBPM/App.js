@@ -19,6 +19,12 @@ export default function App() {
     }
 
     const ageNum = parseFloat(text);
+    if(ageNum === 0){
+      setAge('');
+      setMin(0);
+      setMax(0);
+      return;
+    }
     if(!isNaN(ageNum)) {  // NaN virhekäsittely
       setAge(text);
       setMin(Math.round((220 - ageNum) * 0.65));
