@@ -18,8 +18,8 @@ export default function App() {
       return;
     }
 
-    const ageNum = parseFloat(text);
-    if(ageNum === 0){
+    const ageNum = parseFloat(text); 
+    if(ageNum === 0){    // ikä ei voi olla 0, resettaus
       setAge('');
       setMin(0);
       setMax(0);
