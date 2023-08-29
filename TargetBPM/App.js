@@ -40,10 +40,7 @@ export default function App() {
         />
       <Text style={styles.field}>Heart rate limits:</Text>
       <Text style={styles.field}>
-      <Text style={styles.field}>
         {min === 0 && max === 0 ? '' : `${min} - ${max}`}
-      </Text>
-
       </Text>
       <StatusBar style="auto" />
     </View>
